@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D48259801FEAB39500FAF316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482597F1FEAB39500FAF316 /* AppDelegate.swift */; };
-		D48259821FEAB39500FAF316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48259811FEAB39500FAF316 /* ViewController.swift */; };
 		D48259851FEAB39500FAF316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48259831FEAB39500FAF316 /* Main.storyboard */; };
 		D48259871FEAB39500FAF316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48259861FEAB39500FAF316 /* Assets.xcassets */; };
 		D482598A1FEAB39500FAF316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48259881FEAB39500FAF316 /* LaunchScreen.storyboard */; };
+		D48259941FEAB3F300FAF316 /* SheetAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48259921FEAB3F300FAF316 /* SheetAnimatedTransitioning.swift */; };
+		D48259951FEAB3F300FAF316 /* TipAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48259931FEAB3F300FAF316 /* TipAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D482597C1FEAB39500FAF316 /* TipAlertFormSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipAlertFormSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D482597F1FEAB39500FAF316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D48259811FEAB39500FAF316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D48259841FEAB39500FAF316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D48259861FEAB39500FAF316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48259891FEAB39500FAF316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D482598B1FEAB39500FAF316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48259921FEAB3F300FAF316 /* SheetAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		D48259931FEAB3F300FAF316 /* TipAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,8 @@
 		D48259731FEAB39500FAF316 = {
 			isa = PBXGroup;
 			children = (
-				D482597E1FEAB39500FAF316 /* TipAlertFormSheet */,
+				D482597E1FEAB39500FAF316 /* SheetAnimation */,
+				D48259911FEAB3A400FAF316 /* TipAlertFormSheet */,
 				D482597D1FEAB39500FAF316 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,11 +54,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D482597E1FEAB39500FAF316 /* TipAlertFormSheet */ = {
+		D482597E1FEAB39500FAF316 /* SheetAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D48259921FEAB3F300FAF316 /* SheetAnimatedTransitioning.swift */,
+			);
+			path = SheetAnimation;
+			sourceTree = "<group>";
+		};
+		D48259911FEAB3A400FAF316 /* TipAlertFormSheet */ = {
 			isa = PBXGroup;
 			children = (
 				D482597F1FEAB39500FAF316 /* AppDelegate.swift */,
-				D48259811FEAB39500FAF316 /* ViewController.swift */,
+				D48259931FEAB3F300FAF316 /* TipAlertViewController.swift */,
 				D48259831FEAB39500FAF316 /* Main.storyboard */,
 				D48259861FEAB39500FAF316 /* Assets.xcassets */,
 				D48259881FEAB39500FAF316 /* LaunchScreen.storyboard */,
@@ -136,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48259821FEAB39500FAF316 /* ViewController.swift in Sources */,
+				D48259941FEAB3F300FAF316 /* SheetAnimatedTransitioning.swift in Sources */,
 				D48259801FEAB39500FAF316 /* AppDelegate.swift in Sources */,
+				D48259951FEAB3F300FAF316 /* TipAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
